@@ -26,7 +26,7 @@ public class Madeira : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision){
       if(collision.gameObject.tag=="Player"){
           Invoke("Falling",time);
-          Invoke("RestoreObject",4f);
+          Invoke("RestoreObject",1f);
       }
     }
 /*void RestoreObject(){

@@ -15,6 +15,7 @@ public class Cenario : MonoBehaviour
     private Transform currentPlatsPoint;
     public int plataformaIndex;
    
+   
     void Start()
     {
         if(GameObject.FindGameObjectWithTag("Player") != null){
@@ -27,6 +28,7 @@ public class Cenario : MonoBehaviour
        game.SetActive(false);
        game1.SetActive(false);
        game2.SetActive(false);
+       
        currentPlatsPoint=currentPlat[plataformaIndex].GetComponent<PointE>().point;
     
 
@@ -57,5 +59,7 @@ public class Cenario : MonoBehaviour
        
 
     }
+  
+     
    
 }
